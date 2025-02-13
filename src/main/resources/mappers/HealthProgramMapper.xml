@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kh.edu.test.HealthStore.mapper.HealthProgramMapper">
+    <!-- 모든 운동 프로그램 조회 -->
+    <select id="selectAllHealthPrograms">
+        SELECT * FROM health_programs ORDER BY created_at DESC
+    </select>
+
+    <!-- 특정 운동 프로그램 조회 -->
+    <select id="selectHealthProgramById" >
+        SELECT * FROM health_programs WHERE health_program_id = #{healthProgramId}
+    </select>
+
+    <!-- 운동 프로그램 추가 -->
+    <insert id="insertHealthProgram">
+        INSERT INTO health_programs (program_name, program_type, workout_duration, intensity_level, program_description)
+        VALUES (#{programName}, #{programType}, #{workoutDuration}, #{intensityLevel}, #{programDescription});
+    </insert>
+</mapper>
