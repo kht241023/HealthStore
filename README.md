@@ -27,9 +27,7 @@ CREATE DATABASE testdb;
 - **비밀번호:** `kht1234`
 
 #### 1.2.1 사용자 생성
-```sql
-CREATE USER 'testkht'@'%' IDENTIFIED BY 'kht1234';
-```
+데이터베이스 및 사용자 생성에서 생성 진행
 
 #### 1.2.2 권한 부여
 새로운 사용자 `testkht`에게 `testdb` 데이터베이스에 대한 모든 권한 부여
