@@ -44,6 +44,12 @@ FLUSH PRIVILEGES;
 ---
 
 ## 2. 운동 프로그램 테이블 (`health_programs`) 생성 및 데이터 입력
+### 2.0 데이터베이스 접속
+다음 SQL을 실행하여 `testdb` 데이터베이스 접속
+
+```sql
+USE testdb;
+```
 
 ### 2.1 테이블 생성
 다음 SQL을 실행하여 `health_programs` 테이블을 생성
