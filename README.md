@@ -19,6 +19,10 @@ CREATE USER 'testkht'@'%' IDENTIFIED BY 'kht1234';
 ```sql
 CREATE DATABASE testdb;
 ```
+```
+ERROR 1007 (HY000): Can't create database 'testdb'; database exists
+가 뜰 경우 testdb 가 존재한다는 의미 이므로 1.2.2 로 이동하여 권한 부여 진행
+```
 
 ### 1.2 사용자 생성 및 권한 부여
 새로운 사용자의 ID와 비밀번호는 다음과 같다.
